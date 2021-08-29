@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Cake Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header,
+        footer {
+            background-color: pink;
+        }
+
+        main {
+            background-color: antiquewhite;
+            width: 50%;
+            height: auto;
+            margin: auto;
+            padding: 2em;
+
+        }
+
+        #recipe-image {
+            float: left;
+            margin-bottom: 1em;
+        }
+
+        #aside-container {
+            float: left;
+            margin-left: 2em;
+            margin-bottom: 1em;
+        }
+
+        #time {
+            background-color: powderblue;
+            border: thin solid;
+            padding-left: 1em;
+            list-style-type: none;
+            padding: 1em;
+        }
+
+        #ingredients {
+            margin-top: 1em;
+            background-color: lightgrey;
+            border: thin solid;
+            padding: 1em;
+        }
+
+        section {
+            clear: both;
+            margin-top: 1em;
+        }
+
+        #next-page {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+
+        .card {
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card__image {
+            width: 100%;
+            display: block;
+
+        }
+
+        .card__content {
+            font-size: 0.9;
+            padding: 1em;
+            background-color: #fafafa;
+        }
+
+        .card__content > p:first-of-type
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <h1>Strawberry Cake</h1>
+        <figure id="recipe-image">
+            <img src="recipe.jpg" alt="Strawberry Cake" title="Strawberry Cake" width="300" height="300" />
+            <figcaption>Difficulty: &#9733; &#9733; &#9733;</figcaption>
+        </figure>
+        <aside id="aside-container">
+            <ul id="time">
+                <li>Prep time: 15min</li>
+                <li>Bake time: 45min</li>
+                <li>Total time: 1hour</li>
+                <li>Servings: 8</li>
+            </ul>
+            <aside id="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>ingredient 1</li>
+                    <li>ingredient 2</li>
+                    <li>ingredient 3</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 4</li>
+                    <li>ingredient 4</li>
+                </ul>
+            </aside>
+        </aside>
+        <section>
+            <h3>Procedure</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
+                repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
+                explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Illo quis perspiciatis laudantium nesciunt sint recusandae pariatur a. Deserunt accusamus
+                excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
+                reprehenderit!</p>
+        </section>
+        <div class="cards">
+            <div class="card">
+                <img src="recipe.jpg" alt="Card" class="card__image" />
+                <div class="card__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
+                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
+                    enim consequuntur totam animi!</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up"></i>310
+                    </div>
+                    <div>
+                        <a href="#" class="card__link">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="recipe.jpg" alt="Card" class="card__image" />
+                <div class="card__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
+                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
+                    enim consequuntur totam animi!</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up"></i>310
+                    </div>
+                    <div>
+                        <a href="#" class="card__link">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="recipe.jpg" alt="Card" class="card__image" />
+                <div class="card__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
+                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
+                    enim consequuntur totam animi!</p>
+                </div>
+                <div class="card__info">
+                    <div>
+                        <i class="fa fa-thumbs-up"></i>310
+                    </div>
+                    <div>
+                        <a href="#" class="card__link">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="next-page">
+            <a href="#">Next Page</a>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
