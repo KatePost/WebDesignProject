@@ -1,0 +1,32 @@
+#form{
+    width: 70%;
+    margin: auto;
+    background-color: #ffb898;
+    color: 161, 157, 157;
+}
+
+
+.grid-container{
+    background-color: aqua ;
+}
+
+@media only screen and (min-width: 600px) {
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 1.5rem;
+    
+    background-color: rgba(161, 157, 157, 0.8);
+}
+
+.grid-container > div{
+  text-align: left;
+  padding: 20px 0;
+  font-size: 18px;
+  
+}
+
+div.left{
+    text-align: right;
+}
+}
