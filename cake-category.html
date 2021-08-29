@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: Arial;
+  background-color: rgb(247, 198, 181);
+}
+
+.header{
+    text-align: center;
+}
+
+
+.container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #07ada5;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column, .column1{
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 40px;
+}
+
+.column img {
+  margin-top: 40px;
+  vertical-align: middle;
+  width: 100%;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 700px) {
+  .column{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.column a:link{
+    text-decoration: none;
+    color:  #07ada5;
+}
+.column a:hover{
+    text-decoration: none;
+    color: #008f88;
+    text-shadow: 0 0 1px #8fece8;
+    font-size: large;
+}
+</style>
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 >Header</h1>
+    </header>
+    <div class = "container">
+        <div class="column1" >
+            <select   id="type">
+                <option value="vegan">
+                    Vegan
+                </option>
+                <option value="diet">
+                    Diet
+                </option>
+                <option value="fruity">
+                    fruity
+                </option>
+                <option value="chocolate">
+                    chocolate
+                </option>
+            </select>
+        </div>
+        <div class="column1">&nbsp;</div>
+        <div class="column1"> &nbsp;</div>
+            <div class="column1">
+            <select  id="sort_by">
+                <option value="vegan">
+                    Vegan
+                </option>
+                <option value="diet">
+                    Diet
+                </option>
+                <option value="fruity">
+                    fruity
+                </option>
+                <option value="chocolate">
+                    chocolate
+                </option>
+            </select>
+            </div>
+
+
+
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+        <div class="column"><img src="images/ice-cream-funfetti-loaf-cake-265x265.jpg" alt ="cake"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+    </div>
+</body>
+</html>
