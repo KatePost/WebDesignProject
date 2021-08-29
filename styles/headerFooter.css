@@ -1,0 +1,62 @@
+@charset "UTC-8";
+
+/* colours added for clarity when designing */
+
+.container {
+    background-color: aliceblue;
+    width: 75vw;
+    margin: auto;
+}
+
+header {
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: .25em .5em;
+    margin: .25em;
+}
+
+#mainHeader{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    height: 4em;
+    justify-self: start;
+}
+
+#logo img {
+    width: auto;
+    height: 100%;
+}
+
+#logo figcaption {
+    position: absolute;
+    top: 2em;
+}
+
+#mainNav {
+    justify-self: center;
+    justify-content: stretch;
+}
+
+#socialsNav {
+    justify-self: end;
+}
+
+#categoryHeader {
+
+}
+
