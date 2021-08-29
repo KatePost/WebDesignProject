@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Baking | Home</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        margin: 0 auto;
+        font-family: Arial;
+        background-color: rgb(247, 198, 181);
+        }
+
+        .heading{
+            text-align: left;
+            margin-left: 5rem;
+            margin-top: 5rem;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+                
+        .container {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .home-column{
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 40px;
+        }
+
+        .home-column img {
+        margin-top: 40px;
+        vertical-align: middle;
+        width: 100%;
+        
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .home-column {
+            -ms-flex: 33%;
+            flex: 33%;
+            max-width: 33%;
+        }
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 700px) {
+        .home-column{
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .home-column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+
+        .home-column p{
+            text-align: left;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+
+
+    /*------------------------------------subscribe form style---------------------------------*/
+
+
+        form {
+        border: 3px solid rgb(249, 198, 181);
+        font-family: Arial;
+        padding: 40px;
+        }
+
+        .form-container {
+        padding: 2px;
+        background-color: rgb(247, 198, 181);
+        }
+
+        .form-container h2{
+            margin-bottom: 0;
+        }
+
+
+
+        input[type=text], input[type=submit], input[type=email] {
+        width: 70%;
+        padding: 12px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        align-self:flex-end;
+        }
+
+
+        input[type=submit] {
+        background-color:  rgb(7, 216, 206);;
+        color: rgb(255, 255, 255);
+        border: none;
+        margin-top: 0;
+        }
+
+        input[type=submit]:hover {
+        opacity: 0.8;
+        }
+
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: none;
+            
+            text-shadow: 0 0 1px #aaa;
+            font-size: large;
+        }
+                
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Featured recipes</h1>
+    </div>
+    <div class="container">
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
+            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>short info about this cake...</p>
+        </div>
+        
+    </div>
+
+    <div class="subscribe">
+        <form action="/action_page.php">
+            <div class="form-container">
+              <h2>Something sweet for your inbox! Sign up for FREE recipes</h2>
+            </div>
+          
+            <div class="form-container" >
+               <input type="text" id="name1" size="40" minlength="2" maxlength="15" placeholder="Name" required="required"/>
+               <input type="email" id="email_address" size="40" maxlength="30" placeholder="your_email@example.com" required="required" />
+            </div>
+            <div class="form-container">
+              <input id="submit-button" type="submit" value="Subscribe"/>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
+
