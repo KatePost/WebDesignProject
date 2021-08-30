@@ -15,108 +15,114 @@
 </head>
 
 <body>
-    <header class="major">
-        <a href="index.html">
-            <figure id="logo">
-                <img src="images/download.jpeg" alt="Home | Taste of Baking Logo" />
-                <figcaption>Taste of Baking</figcaption>
-            </figure>
-        </a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="submit-recipe.html">Submit Recipes</a></li>
-            </ul>
-        </nav>
-        <nav id="socialsNav">
-            <ul>
-                <li><a href="https://www.twitch.tv"><span class="fa fa-twitch"></span></a></li>
-                <li><a href="https://www.youtube.com"><span class="fa fa-youtube-play"></span></a></li>
-                <li><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
-                <li><a href="https://www.facebook.com"><span class="fa fa-facebook-square"></span></a></li>
-                <li><a href="https://www.twitter.com"><span class="fa fa-twitter-square"></span></a></li>
-                <li><a href="#top"><span class="fa fa-search"></span></a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="minor">
-        <nav class="navbar">
-            <ul>
-                <li><a href="cake-category.html">Cakes</a></li>
-                <li><a href="category.html">Cookies</a></li>
-                <li><a href="category.html">Bread</a></li>
-                <li><a href="category.html">Pie</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+        <header class="major">
+            <a href="index.html">
+                <figure id="logo">
+                    <img src="images/download.jpeg" alt="Home | Taste of Baking Logo" />
+                    <figcaption>Taste of Baking</figcaption>
+                </figure>
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="submit-recipe.html">Submit Recipes</a></li>
+                </ul>
+            </nav>
+            <nav id="socialsNav">
+                <ul>
+                    <li><a href="https://www.twitch.tv"><span class="fa fa-twitch"></span></a></li>
+                    <li><a href="https://www.youtube.com"><span class="fa fa-youtube-play"></span></a></li>
+                    <li><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://www.facebook.com"><span class="fa fa-facebook-square"></span></a></li>
+                    <li><a href="https://www.twitter.com"><span class="fa fa-twitter-square"></span></a></li>
+                    <li><a href="#top"><span class="fa fa-search"></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <header class="minor">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="cake-category.html">Cakes</a></li>
+                    <li><a href="cookies-category.html">Cookies</a></li>
+                    <li><a href="bread-category.html">Bread</a></li>
+                    <li><a href="pie-category.html">Pie</a></li>
+                </ul>
+            </nav>
+            <div class="textBar">
+                <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
+                <button type="submit" for="searchBar">Search</button>
+            </div>
+        </header>
+        <main>
+            <h3 class="page-head">Thank you for your interest in contributing to our recipes!<br />Please fill out the form
+                below.</h3>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Recipe Submission Form</legend>
+                    <div class="grid-container">
+                        <div class="left"><label for="category" class="label">Category:<sup>*</sup></label></div>
+                        <div>
+                            <select class="form-input" id="category" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="cake">Cake</option>
+                                <option value="cookies">Cookies</option>
+                                <option value="bread">Bread</option>
+                                <option value="pie">Pie</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="left"><label for="name" class="label">Your name:<sup>*</sup></label> </div>
+                        <div><input class="form-input" id="name" type="text" size="30" maxlength="60" required /></div>
+                        <div class="left"><label for="email" class="label">Your email address:<sup>*</sup></label></div>
+                        <div><input class="form-input" type="email" size="30" maxlength="40" required></div>
+                        <div class="left"><label for="title" class="label">Recipe title:<sup>*</sup></label></div>
+                        <div><input class="form-input" id="title" type="text" max="60" size="30" required /></div>
+                        <div class="left"><label for="description" class="label">A brief description of the recipe or
+                                anything else we
+                                should
+                                know:</label></div>
+                        <div><textarea class="form-input" name="description" id="description" cols="30" rows="10"
+                                placeholder="type something..." maxlength="300"></textarea></div>
+                        <div class="left"><label for="file" class="label" >Upload the recipe here:<sup>*</sup></label>
+                        </div>
+                        <div><input class="form-input" id="file" type="file" required /></div>
+                        <div class="check"><input id="name-agree" type="checkbox" required>
+                            <label for="name-agree">By checking this box you agree to our <a href="#">Terms and
+                                    Conditions</a><sup>*</sup></label>
+                        </div>
+                        <div class="check">
+                            <input id="author-rights" required type="checkbox" />
+                            <label for="author-rights">By checking this box you certify that you are the author of the
+                                submitted
+                                recipe and have the distribution rights to the recipe<sup>*</sup></label>
+                        </div>
+                        <div><input id="reset" class="form-button" type="reset" id="clear-form" value="Reset form" /></div>
+                        <div class="centered"><input class="form-button" type="submit" id="submit" value="Submit your recipe" /></div>
+                        </div>
+                </fieldset>
+            </form>
+            <h4 class="footnote">* denotes required field</h4>
+        </main>
+        <footer class="minor">
+        <span id="message">Stay in touch...</span>
         <div class="textBar">
-            <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-            <button type="submit" for="searchBar">Search</button>
+            <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
+            <button type="submit" for="subscribe">Sign up</button>
         </div>
-    </header>
-    <main>
-        <h3 class="page-head">Thank you for your interest in contributing to our recipes!<br />Please fill out the form
-            below.</h3>
-        <form action="#" method="POST">
-            <fieldset>
-                <legend>Recipe Submission Form</legend>
-                <div class="grid-container">
-                    <div class="left"><label for="category" class="label">Category:<sup>*</sup></label></div>
-                    <div>
-                        <select class="form-input" id="category" required>
-                            <option value="" disabled selected>Select a category</option>
-                            <option value="cake">Cake</option>
-                            <option value="cookies">Cookies</option>
-                            <option value="bread">Bread</option>
-                            <option value="pie">Pie</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="left"><label for="name" class="label">Your name:<sup>*</sup></label> </div>
-                    <div><input class="form-input" id="name" type="text" size="30" maxlength="60" required /></div>
-                    <div class="left"><label for="email" class="label">Your email address:<sup>*</sup></label></div>
-                    <div><input class="form-input" type="email" size="30" maxlength="40" required></div>
-                    <div class="left"><label for="title" class="label">Recipe title:<sup>*</sup></label></div>
-                    <div><input class="form-input" id="title" type="text" max="60" size="30" required /></div>
-                    <div class="left"><label for="description" class="label">A brief description of the recipe or
-                            anything else we
-                            should
-                            know:</label></div>
-                    <div><textarea class="form-input" name="description" id="description" cols="30" rows="10"
-                            placeholder="type something..." maxlength="300"></textarea></div>
-                    <div class="left"><label for="file" class="label" >Upload the recipe here:<sup>*</sup></label>
-                    </div>
-                    <div><input class="form-input" id="file" type="file" required /></div>
-                    <div class="check"><input id="name-agree" type="checkbox" required>
-                        <label for="name-agree">By checking this box you agree to our <a href="#">Terms and
-                                Conditions</a><sup>*</sup></label>
-                    </div>
-                    <div class="check">
-                        <input id="author-rights" required type="checkbox" />
-                        <label for="author-rights">By checking this box you certify that you are the author of the
-                            submitted
-                            recipe and have the distribution rights to the recipe<sup>*</sup></label>
-                    </div>
-                    <div><input id="reset" class="form-button" type="reset" id="clear-form" value="Reset form" /></div>
-                    <div class="centered"><input class="form-button" type="submit" id="submit" value="Submit your recipe" /></div>
-                    </div>
-            </fieldset>
-        </form>
-        <h4 class="footnote">* denotes required field</h4>
-    </main>
-    <footer id="subscribeFooter">
-        <span>stay in touch...</span>
-        <div><input type="email" name="subscribe" id="subscribe" size="40" /><button type="submit" for="subscribe">Sign up</button></div>
     </footer>
-    <footer id="links">
+    <footer class="major">
         <ul>
-            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Submit a Recipe to be Featured</a></li>
+            <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
         </ul>
         <div id="copyright"><span>copyright &copy; 2021</span></div>
     </footer>
+</div>
+
 
 </body>
 
