@@ -1,32 +1,59 @@
-#form{
-    width: 70%;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+#page-head{
+    
+    text-align: center;
+}
+
+
+body{
+    background-color: rgba(238,203,188,.4);
+    color: #868268;
+    font-family: 'Merriweather';
+}
+
+fieldset{
+    width: 50%;
     margin: auto;
-    background-color: #ffb898;
-    color: 161, 157, 157;
+    background-color:#fafcf6;
+    border: solid 3px;
+    border-radius: 10px;
 }
 
-
-.grid-container{
-    background-color: aqua ;
+input, textarea, select {
+    background-color: #ffffff;
+    border: 2px #b8b284 solid;
+    border-radius: 5px;
+    font-family: 'Merriweather';
+    color: #868268;
+    font-size: 12pt;
 }
+
+.grid-container > div{
+    text-align: left;
+    padding: 7px 0;
+    font-size: 18px;
+  }
 
 @media only screen and (min-width: 600px) {
 .grid-container{
     display: grid;
     grid-template-columns: 30% 50%;
     gap: 1.5rem;
-    
-    background-color: rgba(161, 157, 157, 0.8);
 }
 
 .grid-container > div{
   text-align: left;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 18px;
   
 }
 
 div.left{
     text-align: right;
+}
+
+#reset{
+    margin: auto;
 }
 }
