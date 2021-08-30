@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-#page-head{
-    
+.page-head, .footnote{
+    font-weight: lighter;
     text-align: center;
+    text-shadow: #fafcf6 1px 1px 2px;
 }
 
 
 body{
-    background-color: rgba(238,203,188,.4);
-    color: #868268;
+    width: auto;
+    margin: auto;
+    background-color: #f7f0e7;
+    color: #72716f;
     font-family: 'Merriweather';
+    
 }
+
+
 
 fieldset{
     width: 50%;
     margin: auto;
     background-color:#fafcf6;
-    border: solid 3px;
+    border: solid 3px #868268;
     border-radius: 10px;
+    padding: 1rem;
 }
 
 input, textarea, select {
@@ -35,7 +42,27 @@ input, textarea, select {
     font-size: 18px;
   }
 
-@media only screen and (min-width: 600px) {
+#reset, #submit{
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 1px 1px 5px #868268;
+}
+
+.centered{
+    margin:auto;
+}
+
+.button:link{
+    box-shadow: 2px 2px 5px #868268;
+}
+
+.button:hover{
+    background-color: #b8b284 ;
+    color: #4d4c4b;
+}
+
+
+@media only screen and (min-width: 610px) {
 .grid-container{
     display: grid;
     grid-template-columns: 30% 50%;
@@ -53,7 +80,7 @@ div.left{
     text-align: right;
 }
 
-#reset{
-    margin: auto;
+.check{
+    grid-column: 1 / span 2;
 }
 }
