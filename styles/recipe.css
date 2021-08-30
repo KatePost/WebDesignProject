@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 main {
     width: 70%;
@@ -59,7 +63,7 @@ main {
 }
 
 section {
-    margin-top: 2em;
+    margin-top: 0;
 }
 
 section p {
