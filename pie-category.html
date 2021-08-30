@@ -5,28 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taste of baking | pies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/headerFooter.css">
+    <link rel="icon" href="images/favicon.ico" type="image/ico"/> 
     <style>
 
-        .header, .footer {
-          display: grid;
-          background-color:  rgb(248, 171, 145);
         
-          }
-          .header{
-            margin: 0;
-            width: 100%;
-            height: 100%;;
-          }
-          .header h1{
-           margin: 0;
-           padding: 0;
-          }
-          .footer{
-            margin-bottom: 0;
-          }
-          .footer h1{
-            margin: 0;
-          }
+
+
   
   .cake-category * {
     box-sizing: border-box;
@@ -42,14 +29,10 @@
     padding: 0;
   }
   
-  .main-cake {
-    background-color: rgb(247, 198, 181);
-  }
-  
   .heading{
       text-align: center;
-      color: rgb(114, 93, 83);
-      font-family: 'Times New Roman', Times, serif;
+      color: #555;
+      font-family: 'Merriweather';
   }
   
   
@@ -58,13 +41,10 @@
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    width: 80%;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #07ada5;
+    font-family: 'Merriweather';
+    margin-bottom: 10px;
     
   }
   
@@ -73,7 +53,7 @@
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
-    padding: 0 40px;
+    padding: 0 10px;
   }
   
   .column img {
@@ -112,19 +92,19 @@
   
   .column a:link{
       text-decoration: none;
-      color:  #07ada5;
+      color:  #008f88;
   }
   .column a:hover{
       text-decoration: none;
-      color: #008f88;
+      color: #07ada5; 
       text-shadow: 0 0 1px #8fece8;
-      font-size: large;
+  
     }
 
     /*------ select option style-------*/
 
     .custom-select {
-        background-color: rgb(250, 146, 111);
+        background-color: antiquewhite;
         width: 100px;
         border: none;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -143,9 +123,49 @@
       </style>
   </head>
   <body>
+    <header class="major">
+      <a href="index.html">
+          <figure id="logo">
+              <img src="images/download.jpeg" alt="Home | Taste of Baking Logo" />
+              <figcaption>Taste of Baking</figcaption>
+          </figure>
+      </a>
+      <nav class="navbar">
+          <ul>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="submit-recipe.html">Submit Recipes</a></li>
+          </ul>
+      </nav>
+      <nav id="socialsNav">
+          <ul>
+              <li><a href="https://www.twitch.tv"><span class="fa fa-twitch"></span></a></li>
+              <li><a href="https://www.youtube.com"><span class="fa fa-youtube-play"></span></a></li>
+              <li><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
+              <li><a href="https://www.facebook.com"><span class="fa fa-facebook-square"></span></a></li>
+              <li><a href="https://www.twitter.com"><span class="fa fa-twitter-square"></span></a></li>
+              <li><a href="#top"><span class="fa fa-search"></span></a></li>
+          </ul>
+      </nav>
+  </header>
+  <header class="minor">
+      <nav class="navbar">
+          <ul>
+              <li><a href="cake-category.html">Cakes</a></li>
+              <li><a href="cookies-category.html">Cookies</a></li>
+              <li><a href="bread-category.html">Bread</a></li>
+              <li><a href="pie-category.html">Pie</a></li>
+          </ul>
+      </nav>
+      <div class="textBar">
+          <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
+          <button type="submit" for="searchBar">Search</button>
+      </div>
+  </header>
+
+
+    <main>
     <div class="main-cake">
-    <div class="header">
-      <h1>Header</h1>
     </div>
   
     <div class="cake-category">
@@ -189,22 +209,34 @@
               </div>
   
               
-          <div class="column"><img src="images/mix_berries_pie2.jpg" alt ="Raspberry Strwberry Blackberry pie"/><a href="recipe.html"><h3>Raspberry Strwberry Blackberry pie</h3></a></div>
-          <div class="column"><img src="images/strawberry.jpg" alt ="Strawberry pie"/><a href="recipe.html"><h3>Strawberry pie</h3></a></div>
-          <div class="column"><img src="images/apple_pie2.jpg" alt ="Apple pie"/><a href="recipe.html"><h3>Apple Pie</h3></a></div>
-          <div class="column"><img src="images/walnut.jpg" alt ="walnut pie"/><a href="recipe.html"><h3>walnut pie</h3></a></div>
-          <div class="column"><img src="images/BlackberryPie.jpg" alt ="Blackberry Pie"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
-          <div class="column"><img src="images/plumPie.jpg" alt ="Plum Pie"/><a href="recipe.html"><h3>Special Strawberry pie</h3></a></div>
-          <div class="column"><img src="images/strawberry-pie-recipe-8.jpg" alt ="Special strawberry pie"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
-          <div class="column"><img src="images/mix_berries.jpg" alt ="berries pie"/><a href="recipe.html"><h3>Berries Pie</h3></a></div>
+          <div class="column"><img src="images/mix_berries_pie2.jpg" alt ="Raspberry Strwberry Blackberry pie"/><a href="recipe.html"><h4>Raspberry Strwberry Blackberry pie</h4></a></div>
+          <div class="column"><img src="images/strawberry.jpg" alt ="Strawberry pie"/><a href="recipe.html"><h4>Strawberry pie</h4></a></div>
+          <div class="column"><img src="images/apple_pie2.jpg" alt ="Apple pie"/><a href="recipe.html"><h4>Apple Pie</h4></a></div>
+          <div class="column"><img src="images/walnut.jpg" alt ="walnut pie"/><a href="recipe.html"><h4>walnut pie</h4></a></div>
+          <div class="column"><img src="images/BlackberryPie.jpg" alt ="Blackberry Pie"/><a href="recipe.html"><h4>Ice Cream Loaf Cake</h4></a></div>
+          <div class="column"><img src="images/plumPie.jpg" alt ="Plum Pie"/><a href="recipe.html"><h4>Special Strawberry pie</h4></a></div>
+          <div class="column"><img src="images/strawberry-pie-recipe-8.jpg" alt ="Special strawberry pie"/><a href="recipe.html"><h4>Ice Cream Loaf Cake</h4></a></div>
+          <div class="column"><img src="images/mix_berries.jpg" alt ="berries pie"/><a href="recipe.html"><h4>Berries Pie</h4></a></div>
           
       </div>
       </div>
-      <div class="footer">
-        
-          footer
-        
-      </footer>
+      </main>
+      <footer class="minor">
+        <span id="message">Stay in touch...</span>
+        <div class="textBar">
+            <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
+            <button type="submit" for="subscribe">Sign up</button>
+        </div>
+    </footer>
+    <footer class="major">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
+        </ul>
+        <div id="copyright"><span>copyright &copy; 2021</span></div>
+    </footer>
       </div>
   </body>
   </html>

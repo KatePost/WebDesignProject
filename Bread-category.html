@@ -93,14 +93,22 @@
   
   .column a:link{
       text-decoration: none;
-      color:  #07ada5;
+      color:  #008f88;
   }
   .column a:hover{
       text-decoration: none;
-      color: #008f88;
+      color:  #07ada5;
       text-shadow: 0 0 1px #8fece8;
-      font-size: large;
+      
   }
+
+  .custom-select {
+        background-color: antiquewhite;
+        width: 100px;
+        border: none;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+    }
   </style>
       </style>
   </head>
@@ -156,7 +164,7 @@
       </div>
       <div class = "container">
           <div class="column1" >
-              <select   id="type">
+              <select  class="custom-select" id="type">
                   <option value="vegan">
                       Vegan
                   </option>
@@ -174,7 +182,7 @@
           <div class="column1">&nbsp;</div>
           <div class="column1"> &nbsp;</div>
               <div class="column1">
-              <select  id="sort_by">
+              <select class="custom-select" id="sort_by">
                   <option value="sort_by">
                         sort by
                   </option>
