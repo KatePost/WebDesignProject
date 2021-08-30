@@ -7,46 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-        header, footer {
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            position: relative;
+            min-height: 100vh;
+
+        }
+
+        #content-wrap {
+            padding-bottom: 2.5rem
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;  
+        }
+
+        header,
+        footer {
             background-color: pink;
         }
 
         main {
-            background-color: antiquewhite;
             width: 70%;
             height: auto;
             margin: auto;
             text-align: center;
+            padding: 1em;
+        }
+
+        img {
+            width: 50%;
+            padding: 1em;
+        }
+
+
+        @media only screen and (max-width: 700px) {
+            body {
+                font-size: 0.8em;
+            }
+
+            img {
+                width: 70%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Header</h1>
-    </header>
-    <main>
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
-            repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
-            explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Illo quis perspiciatis laudantium nesciunt sint recusandae pariatur a. Deserunt accusamus
-            excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
-            reprehenderit!</p>
-        <figure>
-            <img src="about_us.jpg" alt="About Us Photo" title="About Us Photo">
-        </figure>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
-            repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
-            explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Illo quis perspiciatis laudantium nesciunt sint recusandae pariatur a. Deserunt accusamus
-            excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
-            reprehenderit!</p>
-    </main>
-    <footer>
-        Footer
-    </footer>
-
+    <div id="content-wrap">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
+                repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
+                explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Illo quis perspiciatis laudantium nesciunt sint recusandae pariatur a. Deserunt accusamus
+                excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
+                reprehenderit!</p>
+            <figure>
+                <img src="about_us.jpg" alt="About Us Photo" title="About Us Photo">
+            </figure>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
+                repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
+                explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Illo quis perspiciatis laudantium nesciunt sint recusandae pariatur a. Deserunt accusamus
+                excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
+                reprehenderit!</p>
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </div>
 </body>
 
 </html>

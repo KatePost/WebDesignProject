@@ -12,60 +12,85 @@
             margin: 0;
         }
 
+        body {
+            background-color: antiquewhite;
+        }
+
         header,
         footer {
             background-color: pink;
         }
 
         main {
-            background-color: antiquewhite;
-            width: 50%;
+            width: 70%;
             height: auto;
             margin: auto;
             padding: 2em;
 
         }
 
-        #recipe-image {
-            float: left;
-            margin-bottom: 1em;
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2em;
+
         }
 
-        #aside-container {
-            float: left;
-            margin-left: 2em;
-            margin-bottom: 1em;
+        img {
+            width: 100%;
         }
 
         #time {
             background-color: powderblue;
-            border: thin solid;
+            border-bottom: 2px solid #cccccc;
             padding-left: 1em;
             list-style-type: none;
             padding: 1em;
+            background-color: #fafafa;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         }
 
         #ingredients {
             margin-top: 1em;
             background-color: lightgrey;
-            border: thin solid;
+            border-bottom: 2px solid #cccccc;
             padding: 1em;
+            background-color: #fafafa;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
         }
 
         section {
-            clear: both;
             margin-top: 1em;
         }
 
+        section p {
+            margin: 1em;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .recipe {
+                grid-column: 1/3;
+            }
+
+            body {
+                font-size: 0.8em;
+            }
+
+        }
+
+        /* Card styling */
         #next-page {
             text-align: center;
             margin-top: 1em;
         }
 
+
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1em;
+            margin-top: 1em;
         }
 
         .card {
@@ -73,19 +98,38 @@
         }
 
         .card__image {
-            width: 100%;
             display: block;
 
         }
 
         .card__content {
-            font-size: 0.9;
+            font-size: 0.9em;
             padding: 1em;
             background-color: #fafafa;
         }
 
-        .card__content > p:first-of-type {}
+        .card__info {
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            background: #eeeeee;
+            font-size: 0.8em;
+            border-bottom: 2px solid #cccccc;
+            align-items: center;
+            color: #555;
+        }
 
+        .card__info i {
+            font-size: 0.9em;
+        }
+
+        .card__link {
+            text-decoration: none;
+        }
+
+        .card__link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -94,35 +138,39 @@
         <h1>Header</h1>
     </header>
     <main>
-        <h1>Strawberry Cake</h1>
-        <figure id="recipe-image">
-            <img src="recipe.jpg" alt="Strawberry Cake" title="Strawberry Cake" width="300" height="300" />
-            <figcaption>Difficulty: &#9733; &#9733; &#9733;</figcaption>
-        </figure>
-        <aside id="aside-container">
-            <ul id="time">
-                <li>Prep time: 15min</li>
-                <li>Bake time: 45min</li>
-                <li>Total time: 1hour</li>
-                <li>Servings: 8</li>
-            </ul>
-            <aside id="ingredients">
-                <h3>Ingredients</h3>
-                <ul>
-                    <li>ingredient 1</li>
-                    <li>ingredient 2</li>
-                    <li>ingredient 3</li>
-                    <li>ingredient 4</li>
-                    <li>ingredient 4</li>
-                    <li>ingredient 4</li>
-                    <li>ingredient 4</li>
-                    <li>ingredient 4</li>
-                    <li>ingredient 4</li>
+        <div class="grid">
+            <div class="recipe">
+                <h1>Strawberry Cake</h1>
+                <figure id="recipe-image">
+                    <img src="recipe.jpg" alt="Strawberry Cake" title="Strawberry Cake" />
+                    <figcaption>Difficulty: &#9733; &#9733; &#9733;</figcaption>
+                </figure>
+            </div>
+            <aside id="aside-container">
+                <ul id="time">
+                    <li>Prep time: 15min</li>
+                    <li>Bake time: 45min</li>
+                    <li>Total time: 1hour</li>
+                    <li>Servings: 8</li>
                 </ul>
+                <aside id="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>ingredient 1</li>
+                        <li>ingredient 2</li>
+                        <li>ingredient 3</li>
+                        <li>ingredient 4</li>
+                        <li>ingredient 4</li>
+                        <li>ingredient 4</li>
+                        <li>ingredient 4</li>
+                        <li>ingredient 4</li>
+                        <li>ingredient 4</li>
+                    </ul>
+                </aside>
             </aside>
-        </aside>
+        </div>
         <section>
-            <h3>Procedure</h3>
+            <h3>Instructions</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
                 repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
                 explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -130,57 +178,75 @@
                 excepturi impedit, molestiae quo deleniti necessitatibus aspernatur sint facilis dolore
                 reprehenderit!</p>
         </section>
-        <div class="cards">
-            <div class="card">
-                <img src="recipe.jpg" alt="Card" class="card__image" />
-                <div class="card__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
-                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
-                    enim consequuntur totam animi!</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up"></i>310
+        <section>
+            <h3>Similar Recipes</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="recipe.jpg" alt="Card" class="card__image" />
+                    <div class="card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus
+                            dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque
+                            enim consequuntur totam animi!</p>
                     </div>
-                    <div>
-                        <a href="#" class="card__link">View Recipe</a>
+                    <div class="card__info">
+                        <div>
+                            &#9733; &#9733; &#9733;
+                        </div>
+                        <div>
+                            <a href="#" class="card__link">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="recipe.jpg" alt="Card" class="card__image" />
+                    <div class="card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus
+                            dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque
+                            enim consequuntur totam animi!</p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            &#9733; &#9733; &#9733;
+                        </div>
+                        <div>
+                            <a href="#" class="card__link">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="recipe.jpg" alt="Card" class="card__image" />
+                    <div class="card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus
+                            dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque
+                            enim consequuntur totam animi!</p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            &#9733; &#9733; &#9733;
+                        </div>
+                        <div>
+                            <a href="#" class="card__link">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="recipe.jpg" alt="Card" class="card__image" />
+                    <div class="card__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus
+                            dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque
+                            enim consequuntur totam animi!</p>
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            &#9733; &#9733; &#9733;
+                        </div>
+                        <div>
+                            <a href="#" class="card__link">View Recipe</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="recipe.jpg" alt="Card" class="card__image" />
-                <div class="card__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
-                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
-                    enim consequuntur totam animi!</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up"></i>310
-                    </div>
-                    <div>
-                        <a href="#" class="card__link">View Recipe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="recipe.jpg" alt="Card" class="card__image" />
-                <div class="card__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus natus earum temporibus 
-                    dolorem itaque, nisi nesciunt voluptatem eum at quae ex non ullam maiores inventore cumque 
-                    enim consequuntur totam animi!</p>
-                </div>
-                <div class="card__info">
-                    <div>
-                        <i class="fa fa-thumbs-up"></i>310
-                    </div>
-                    <div>
-                        <a href="#" class="card__link">View Recipe</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </section>
         <div id="next-page">
             <a href="#">Next Page</a>
         </div>
