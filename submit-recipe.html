@@ -12,13 +12,13 @@
 
 </head>
 
-<body class="wrapper">
+<body>
     <header class="header">
     </header>
-    <main class="body">
-        <h3>Thank you for your interest in contributing to our recipes!<br />Please fill out the form below.</h3>
+    <main>
+        <h3 id="page-head">Thank you for your interest in contributing to our recipes!<br />Please fill out the form below.</h3>
         <div id="form">
-            <form action="/#" method="POST">
+            <form action="#" method="POST">
                 <fieldset>
                     <legend>Recipe Submission Form</legend>
                     <div class="grid-container">
@@ -35,18 +35,18 @@
                             </select>
                         </div>
                         <div class="left"><label for="name" class="label">Your name:<sup>*</sup></label> </div>
-                        <div><input id="name" type="text" size="30" maxlength="60" required /></div>
+                        <div><input id="name" type="text" size="40" maxlength="60" required /></div>
                         <div class="left"><label for="email" class="label">Your email address:<sup>*</sup></label></div>
-                        <div><input type="email" size="30" maxlength="40" required></div>
+                        <div><input type="email" size="40" maxlength="40" required></div>
                         <div class="left"><label for="title" class="label">Recipe title:<sup>*</sup></label></div>
-                        <div><input id="title" type="text" max="60" required /></div>
+                        <div><input id="title" type="text" max="60" size="40" required /></div>
                         <div class="left"><label for="description" class="label">A brief description of the recipe or
                                 anything else we
                                 should
                                 know:</label></div>
-                        <div><textarea name="description" id="description" cols="30" rows="10"
-                                placeholder="type something..."></textarea></div>
-                        <div class="left"><label for="file" class="label">Upload the recipe here:<sup>*</sup< /label>
+                        <div><textarea name="description" id="description" cols="40" rows="10"
+                                placeholder="type something..." maxlength="300"></textarea></div>
+                        <div class="left"><label for="file" class="label">Upload the recipe here:<sup>*</sup></label>
                         </div>
                         <div><input id="file" type="file" required /></div>
                         <div><input id="name-agree" type="checkbox" required>
@@ -59,6 +59,8 @@
                                 submitted
                                 recipe and have the distributions rights to the recipe<sup>*</sup></label>
                         </div>
+                        <div><input type="submit" id="submit" value="Submit your recipe" /></div>
+                        <div id="reset"><input type="reset" id="clear-form" value="Reset form" /></div>
                 </fieldset>
             </form>
         </div>
