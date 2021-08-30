@@ -5,7 +5,7 @@
 .about-us-main {
     width: 70%;
     height: auto;
-    margin: auto;
+    margin: 2em auto auto auto;
     text-align: center;
     padding: 1em;
     background-color: white;
@@ -13,7 +13,7 @@
     color: #555;
 }
 
-img {
+#about-us-image {
     width: 50%;
     padding: 1em;
 }
@@ -27,5 +27,10 @@ img {
     img {
         width: 70%;
     }
+}
+
+.container {
+    margin: auto;
+    color: #555;
 }
 
