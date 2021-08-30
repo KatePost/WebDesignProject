@@ -51,6 +51,19 @@ button, input[type="submit"], input[type="reset"] {
     box-shadow: 1px 1px 5px #868268;
 }
 
+button:link, input[type="submit"]:link, input[type="reset"]:link{
+    box-shadow: 2px 2px 5px #868268;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #b8b284 ;
+    color: #4d4c4b;
+}
+
+button:active, input[type="submit"]:active, input[type="reset"]:active {
+    box-shadow: 1px 1px 1px #868268;
+}
+
 /* default styles end */
 /* header / footer styles */
 
