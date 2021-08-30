@@ -25,6 +25,11 @@ header, footer {
     box-shadow: 1px 1px 5px lightgrey;
 }
 
+header.major {
+    position: sticky;
+    top: 0;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -58,18 +63,11 @@ header a:active, footer a:active {
 }
 
 #logo {
-    height: 6.5rem;
     max-width: fit-content;
     width: 20%;
     justify-self: start;
     padding: 0;
     margin: 0;
-}
-
-#logo img {
-    height: 100%;
-    transform: scaleX(-1);
-    padding: 0;
 }
 
 #logo figcaption {
@@ -83,18 +81,21 @@ header a:active, footer a:active {
     left: 2rem;
 }
 
-#logo figcaption::first-letter {
-    font-size: 3em;
+#logo img {
+    max-height: 100%;
+    transform: scaleX(-1);
+    padding: 0;
 }
+
 
 .minor {
     background-color: #fff1dc;
     box-shadow: 0 0 20px inset goldenrod, 0 0 5px grey;
-
 }
 
 .textBar {
     padding: .5em;
+    text-align: center;
 }
 
 .minor input {
@@ -150,11 +151,33 @@ nav ul {
     margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
 
+#logo {
+    height: 2em;
+}
+
+#logo img {
+    height: 100%;
+}
+    
+#logo figcaption {
+    top: .5em;
+}
+}
 @media only screen and (min-width: 600px) {
+    
+
+#logo {
+    height: 6.5rem;
+}
+
+#logo figcaption::first-letter {
+    font-size: 3em;
+}  
 
 nav {
-    width: 80%;
+    width: 100%;
 }
 
 .navbar li, .navbar a{
@@ -164,8 +187,6 @@ nav {
 header.major{
     display: grid;
     grid-template-columns: auto 70% auto;
-    position: sticky;
-    top: 0;
     align-items: center;
 }
 
