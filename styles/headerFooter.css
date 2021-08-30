@@ -98,7 +98,7 @@ header a:active, footer a:active {
 }
 
 .minor input {
-    width: 60vw;
+    width: 40vw;
     padding: 1em;
     border: none;
     box-shadow: inset 0 0 5px #e0e0e0;
