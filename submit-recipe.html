@@ -24,7 +24,7 @@
                 <div class="grid-container">
                     <div class="left"><label for="category" class="label">Category:<sup>*</sup></label></div>
                     <div>
-                        <select id="category" required>
+                        <select class="form-input" id="category" required>
                             <option value="" disabled selected>Select a category</option>
                             <option value="cake">Cake</option>
                             <option value="cookies">Cookies</option>
@@ -34,20 +34,20 @@
                         </select>
                     </div>
                     <div class="left"><label for="name" class="label">Your name:<sup>*</sup></label> </div>
-                    <div><input id="name" type="text" size="35" maxlength="60" required /></div>
+                    <div><input class="form-input" id="name" type="text" size="30" maxlength="60" required /></div>
                     <div class="left"><label for="email" class="label">Your email address:<sup>*</sup></label></div>
-                    <div><input type="email" size="35" maxlength="40" required></div>
+                    <div><input class="form-input" type="email" size="30" maxlength="40" required></div>
                     <div class="left"><label for="title" class="label">Recipe title:<sup>*</sup></label></div>
-                    <div><input id="title" type="text" max="60" size="35" required /></div>
+                    <div><input class="form-input" id="title" type="text" max="60" size="30" required /></div>
                     <div class="left"><label for="description" class="label">A brief description of the recipe or
                             anything else we
                             should
                             know:</label></div>
-                    <div><textarea name="description" id="description" cols="35" rows="10"
+                    <div><textarea class="form-input" name="description" id="description" cols="30" rows="10"
                             placeholder="type something..." maxlength="300"></textarea></div>
-                    <div class="left"><label for="file" class="label">Upload the recipe here:<sup>*</sup></label>
+                    <div class="left"><label for="file" class="label" >Upload the recipe here:<sup>*</sup></label>
                     </div>
-                    <div><input id="file" type="file" required /></div>
+                    <div><input class="form-input" id="file" type="file" required /></div>
                     <div class="check"><input id="name-agree" type="checkbox" required>
                         <label for="name-agree">By checking this box you agree to our <a href="#">Terms and
                                 Conditions</a><sup>*</sup></label>
@@ -58,14 +58,25 @@
                             submitted
                             recipe and have the distribution rights to the recipe<sup>*</sup></label>
                     </div>
-                    <div><input id="reset" class="button" type="reset" id="clear-form" value="Reset form" /></div>
-                    <div class="centered"><input class="button" type="submit" id="submit" value="Submit your recipe" /></div>
+                    <div><input id="reset" class="form-button" type="reset" id="clear-form" value="Reset form" /></div>
+                    <div class="centered"><input class="form-button" type="submit" id="submit" value="Submit your recipe" /></div>
                     </div>
             </fieldset>
         </form>
         <h4 class="footnote">* denotes required field</h4>
     </main>
-    <footer class="footer">
+    <footer id="subscribeFooter">
+        <span>stay in touch...</span>
+        <div><input type="email" name="subscribe" id="subscribe" size="40" /><button type="submit" for="subscribe">Sign up</button></div>
+    </footer>
+    <footer id="links">
+        <ul>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Submit a Recipe to be Featured</a></li>
+        </ul>
+        <div id="copyright"><span>copyright &copy; 2021</span></div>
     </footer>
 
 </body>

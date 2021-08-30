@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Taste of Baking</title>
     <link rel="stylesheet" href="styles/submit-recipe.css" />
+
+
 </head>
 
 <body>
@@ -23,12 +25,12 @@
                 <legend>Contact Us</legend>
                 <div class="grid-container">
                     <div class="left"><label for="name">Your name:</label></div>
-                    <div><input id="name" type="text" size="35" maxlength="60" /></div>
+                    <div><input class="form-input" id="name" type="text" size="30" maxlength="60" /></div>
                     <div class="left"><label for="email" class="label">Your email address:</label></div>
-                    <div><input type="email" size="35" maxlength="40" required></div>
+                    <div><input class="form-input" type="email" size="30" maxlength="40" required></div>
                     <div class="left"><label for="category" class="label">Category:<sup>*</sup></label></div>
                     <div>
-                        <select id="category" required>
+                        <select class="form-input" id="category" required>
                             <option value="" disabled selected>Select a category</option>
                             <option value="cake">Recipe Question</option>
                             <option value="bread">Recipe Feedback</option>
@@ -39,18 +41,28 @@
                     </div>
 
                     <div class="left"><label for="description" class="label">Your message:<sup>*</sup></label></div>
-                    <div><textarea name="description" id="description" cols="35" rows="10"
+                    <div><textarea class="form-input" name="description" id="description" cols="30" rows="10"
                             placeholder="type something..." maxlength="600" required></textarea></div>
-                    <div><input id="reset" class="button" type="reset" id="clear-form" value="Reset form" /></div>
-                    <div class="centered"><input class="button" type="submit" id="submit" value="Submit feedback" />
+                    <div><input id="reset" class="form-button" type="reset" id="clear-form" value="Reset form" /></div>
+                    <div class="centered"><input class="form-button" type="submit" id="submit" value="Submit feedback" />
                     </div>
                 </div>
             </fieldset>
         </form>
         <h4 class="footnote">* denotes required field</h4>
     </main>
-    <footer class="footer">
-
+    <footer id="subscribeFooter">
+        <span>stay in touch...</span>
+        <div><input type="email" name="subscribe" id="subscribe" size="40" /><button type="submit" for="subscribe">Sign up</button></div>
+    </footer>
+    <footer id="links">
+        <ul>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
+        </ul>
+        <div id="copyright"><span>copyright &copy; 2021</span></div>
     </footer>
 
 </body>
