@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of baking | pies</title>
+    <style>
+
+        .header, .footer {
+          display: grid;
+          background-color:  rgb(248, 171, 145);
+        
+          }
+          .header{
+            margin: 0;
+            width: 100%;
+            height: 100%;;
+          }
+          .header h1{
+           margin: 0;
+           padding: 0;
+          }
+          .footer{
+            margin-bottom: 0;
+          }
+          .footer h1{
+            margin: 0;
+          }
+  
+  .cake-category * {
+    box-sizing: border-box;
+  }
+  
+  .cake-category{
+    display: grid;
+    font-family: Arial;
+  }
+  
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-cake {
+    background-color: rgb(247, 198, 181);
+  }
+  
+  .heading{
+      text-align: center;
+      color: rgb(114, 93, 83);
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  
+  .container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #07ada5;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column, .column1{
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 40px;
+  }
+  
+  .column img {
+    margin-top: 40px;
+    vertical-align: middle;
+    width: 100%;
+    
+  }
+  
+  /* Responsive layout - makes a three column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 33%;
+      flex: 33%;
+      max-width: 33%;
+    }
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 700px) {
+    .column{
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, .column1 {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .column a:link{
+      text-decoration: none;
+      color:  #07ada5;
+  }
+  .column a:hover{
+      text-decoration: none;
+      color: #008f88;
+      text-shadow: 0 0 1px #8fece8;
+      font-size: large;
+    }
+
+    /*------ select option style-------*/
+
+    .custom-select {
+        background-color: rgb(250, 146, 111);
+        width: 100px;
+        border: none;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+    }
+
+    img{
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
+    }
+
+
+
+
+  
+  </style>
+      </style>
+  </head>
+  <body>
+    <div class="main-cake">
+    <div class="header">
+      <h1>Header</h1>
+    </div>
+  
+    <div class="cake-category">
+      <div class="heading">
+          <h1 >...... PIES .....</h1>
+      </div>
+      <div class = "container">
+          <div class="column1" >
+              <select  class="custom-select" id="type">
+                  <option value="vegan">
+                      Vegan
+                  </option>
+                  <option value="diet">
+                      Diet
+                  </option>
+                  <option value="fruity">
+                      fruity
+                  </option>
+                  <option value="chocolate">
+                      chocolate
+                  </option>
+              </select>
+          </div>
+          <div class="column1">&nbsp;</div>
+          <div class="column1"> &nbsp;</div>
+              <div class="column1">
+              <select class="custom-select" id="sort_by">
+                  <option value="sort_by">
+                        sort by
+                  </option>
+                  <option value="Date">
+                      Date
+                  </option>
+                  <option value="View">
+                      View
+                  </option>
+                  <option value="Difficulty">
+                      Difficulty
+                  </option>
+              </select>
+              </div>
+  
+              
+          <div class="column"><img src="images/mix_berries_pie2.jpg" alt ="Raspberry Strwberry Blackberry pie"/><a href="recipe.html"><h3>Raspberry Strwberry Blackberry pie</h3></a></div>
+          <div class="column"><img src="images/strawberry.jpg" alt ="Strawberry pie"/><a href="recipe.html"><h3>Strawberry pie</h3></a></div>
+          <div class="column"><img src="images/apple_pie2.jpg" alt ="Apple pie"/><a href="recipe.html"><h3>Apple Pie</h3></a></div>
+          <div class="column"><img src="images/walnut.jpg" alt ="walnut pie"/><a href="recipe.html"><h3>walnut pie</h3></a></div>
+          <div class="column"><img src="images/BlackberryPie.jpg" alt ="Blackberry Pie"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+          <div class="column"><img src="images/plumPie.jpg" alt ="Plum Pie"/><a href="recipe.html"><h3>Special Strawberry pie</h3></a></div>
+          <div class="column"><img src="images/strawberry-pie-recipe-8.jpg" alt ="Special strawberry pie"/><a href="recipe.html"><h3>Ice Cream Loaf Cake</h3></a></div>
+          <div class="column"><img src="images/mix_berries.jpg" alt ="berries pie"/><a href="recipe.html"><h3>Berries Pie</h3></a></div>
+          
+      </div>
+      </div>
+      <div class="footer">
+        
+          footer
+        
+      </footer>
+      </div>
+  </body>
+  </html>

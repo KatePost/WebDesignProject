@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taste of Baking | Home</title>
     <!-- Font Awesome Icon Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/headerFooter.css">
+    <link rel="icon" href="images/favicon.ico" type="image/ico"/> 
     <style>
 
-        * {
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .home * {
         box-sizing: border-box;
         }
 
-        body {
-        margin: 0 auto;
-        font-family: Arial;
-        background-color: rgb(247, 198, 181);
+        .home{
+            background-color: #fff;
+            color: #555;
+        }
+
+        .home{
+            display: grid;
+            margin: 0 auto;
+            font-family: 'Merriweather';
         }
 
         .heading{
             text-align: left;
-            margin-left: 5rem;
-            margin-top: 5rem;
+            margin-left: 15%;
+            margin-top: 0;
         }
 
         .checked {
@@ -34,14 +47,9 @@
         display: flex;
         -ms-flex-wrap: wrap; /* IE10 */
         flex-wrap: wrap;
-        padding: 0 4px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 40px;
+        width: 80%;
         text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        
-        
+        font-family: 'Merriweather';
         }
 
         /* Create four equal columns that sits next to each other */
@@ -49,7 +57,7 @@
         -ms-flex: 25%; /* IE10 */
         flex: 25%;
         max-width: 25%;
-        padding: 0 40px;
+        padding: 0 15px;
         }
 
         .home-column img {
@@ -59,7 +67,7 @@
         
         }
 
-        /* Responsive layout - makes a two column-layout instead of four columns */
+        /* Responsive layout - makes a three column-layout instead of four columns */
         @media screen and (max-width: 800px) {
         .home-column {
             -ms-flex: 33%;
@@ -77,7 +85,7 @@
         }
         }
 
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
         .home-column {
             -ms-flex: 100%;
@@ -93,6 +101,8 @@
             display: -webkit-box;
             -webkit-line-clamp: 2; /* number of lines to show */
             -webkit-box-orient: vertical;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
 
@@ -101,9 +111,15 @@
 
 
         form {
-        border: 3px solid rgb(249, 198, 181);
         font-family: Arial;
-        padding: 40px;
+        }
+
+        .form-position{
+            margin: auto;
+            width: 60%;
+            border: 5px solid rgb(247, 198, 181);
+            padding: 20px;
+            font-size: 1.7vw;
         }
 
         .form-container {
@@ -118,13 +134,12 @@
 
 
         input[type=text], input[type=submit], input[type=email] {
-        width: 70%;
+        width: 100%;
         padding: 12px;
         margin: 4px 0;
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-        align-self:flex-end;
         }
 
 
@@ -153,12 +168,53 @@
     </style>
 </head>
 <body>
+    <header class="major">
+        <a href="#">
+            <figure id="logo">
+                <img src="images/download.jpeg" alt="Home | Taste of Baking Logo" />
+                <figcaption>Taste of Baking</figcaption>
+            </figure>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="submit-recipe.html">Submit Recipes</a></li>
+            </ul>
+        </nav>
+        <nav id="socialsNav">
+            <ul>
+                <li><a href="https://www.twitch.tv"><span class="fa fa-twitch"></span></a></li>
+                <li><a href="https://www.youtube.com"><span class="fa fa-youtube-play"></span></a></li>
+                <li><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="https://www.facebook.com"><span class="fa fa-facebook-square"></span></a></li>
+                <li><a href="https://www.twitter.com"><span class="fa fa-twitter-square"></span></a></li>
+                <li><a href="#top"><span class="fa fa-search"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="minor">
+        <nav class="navbar">
+            <ul>
+                <li><a href="cake-category.html">Cakes</a></li>
+                <li><a href="category.html">Cookies</a></li>
+                <li><a href="category.html">Bread</a></li>
+                <li><a href="category.html">Pie</a></li>
+            </ul>
+        </nav>
+        <div class="textBar">
+            <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
+            <button type="submit" for="searchBar">Search</button>
+        </div>
+    </header>
+    <main>
+    <div class ="home">
     <div class="heading">
         <h1>Featured recipes</h1>
     </div>
     <div class="container">
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+        <div class="home-column"><a href="recipe.html"><img src="images/kitkat_cake.jpg" alt="kitkat cake image"/></a>
+            <a href="recipe.html"><h4>KitKat Cake</h4></a>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -167,8 +223,38 @@
             <p>short info about this cake...</p>
         </div>
 
+        <div class="home-column"><a href="recipe.html"><img src="images/mix_berries_pie2.jpg" alt="Raspberry Strwberry Blackberry pie"/></a>
+            <a href="recipe.html"><h4>Raspberry Strwberry Blackberry pie</h4></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate dignissimos autem, beatae eaque cum doloremque perferendis quasi accusamus at ratione omnis delectus culpa veritatis soluta ipsum officiis est reiciendis!</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/croissant.jpg" alt="French Croissant"/></a>
+            <a href="recipe.html"><h4>French Croissant</h4></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>short info about this cake...</p>
+        </div>
+
+        <div class="home-column"><a href="recipe.html"><img src="images/strawberry-pie-recipe-8.jpg" alt="strawberry Pie"/></a>
+            <a href="recipe.html"><h4>Strawberry Pie</h4></a>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <p>short info about this cake...</p>
+        </div>
+
         <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+            <a href="recipe.html"><h4>Cherry Buckle</h4></a>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -177,72 +263,42 @@
             <p>short info about this cake...</p>
         </div>
 
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+        <div class="home-column"><a href="recipe.html"><img src="images/carrotcake1.jpg" alt="Carrot and Walnut Cake"/></a>
+            <a href="recipe.html"><h4>Carrot & Walnut Cake</h4></a>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <p>short info about this cake...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus, eum esse suscipit porro tenetur illo soluta id hic consequuntur, illum temporibus quo quis modi aut voluptates pariatur quam libero?.</p>
         </div>
 
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+        <div class="home-column"><a href="recipe.html"><img src="images/CinnamonRaisinBread.jpg" alt="Cinnamon Raisin Bread"/></a>
+            <a href="recipe.html"><h4>Cherry Buckle</h4></a>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <p>short info about this cake...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint dignissimos incidunt nulla tempora harum cum quod eum recusandae mollitia? Sit deleniti ex aut, mollitia ratione maxime quo unde iusto.</p>
         </div>
 
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
+        <div class="home-column"><a href="recipe.html"><img src="images/bread1.jpg" alt="Baguette"/></a>
+            <a href="recipe.html"><h4>Great Baguette Recipe</h4></a>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>short info about this cake...</p>
-        </div>
-
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>short info about this cake...</p>
-        </div>
-
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <p>short info about this cake...</p>
-        </div>
-
-        <div class="home-column"><a href="recipe.html"><img src="images/cherry-buckle.jpg" alt="cherry-buckle"/></a>
-            <a href="recipe.html"><h2>Cherry Buckle</h2></a>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
             <p>short info about this cake...</p>
         </div>
         
     </div>
 
     <div class="subscribe">
-        <form action="/action_page.php">
+        <form class ="form-position" method= "post" action="subscribe-completed.html" autocomplete="on">
             <div class="form-container">
-              <h2>Something sweet for your inbox! Sign up for FREE recipes</h2>
+              <h4>Something sweet for your inbox! Sign up for FREE recipes</h4>
             </div>
           
             <div class="form-container" >
@@ -253,6 +309,26 @@
               <input id="submit-button" type="submit" value="Subscribe"/>
             </div>
           </form>
+    </div>
+    </main>
+
+
+    <footer class="minor">
+        <span id="message">Stay in touch...</span>
+        <div class="texBar">
+            <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
+            <button type="submit" for="subscribe">Sign up</button>
+        </div>
+    </footer>
+    <footer class="major">
+        <ul>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Submit a Recipe to be Featured</a></li>
+        </ul>
+        <div id="copyright"><span>copyright &copy; 2021</span></div>
+    </footer>
     </div>
 </body>
 </html>
