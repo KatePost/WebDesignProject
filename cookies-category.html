@@ -9,115 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/headerFooter.css">
     <link rel="icon" href="images/favicon.ico" type="image/ico"/> 
-    <style>
-
-  .cake-category * {
-    box-sizing: border-box;
-  }
-  
-  .cake-category{
-    display: grid;
-    font-family: Arial;
-  }
-  
-  html,body{
-    margin: 0;
-    padding: 0;
-  }
-  
-  .heading{
-      text-align: center;
-      color: #555;
-      font-family: 'Merriweather';
-  }
-  
-  
-  .container {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    width: 80%;
-    text-align: center;
-    font-family: 'Merriweather';
-    margin-bottom: 10px;
-    
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column, .column1{
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 10px;
-  }
-  
-  .column img {
-    margin-top: 40px;
-    vertical-align: middle;
-    width: 100%;
-    
-  }
-  
-  /* Responsive layout - makes a three column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 33%;
-      flex: 33%;
-      max-width: 33%;
-    }
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 700px) {
-    .column{
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, .column1 {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
-  .column a:link{
-      text-decoration: none;
-      color:  #008f88;
-  }
-  .column a:hover{
-      text-decoration: none;
-      color: #07ada5; 
-      text-shadow: 0 0 1px #8fece8;
-  
-    }
-
-    /*------ select option style-------*/
-
-    .custom-select {
-        background-color: antiquewhite;
-        width: 100px;
-        border: none;
-        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-        border-radius: 5px;
-    }
-
-    img{
-        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
-    }
-
-
-
-
-  
-  </style>
-      </style>
+    <link rel="stylesheet" href="styles/cookies-category.css"/>
   </head>
+
+
   <body>
     <header class="major">
       <a href="index.html">
@@ -168,9 +63,12 @@
       <div class="heading">
           <h1 >...... PIES .....</h1>
       </div>
-      <div class = "container">
+      <div class = "containers">
           <div class="column1" >
               <select  class="custom-select" id="type">
+                <option value="type">
+                    type
+                </option>
                   <option value="vegan">
                       Vegan
                   </option>
