@@ -14,9 +14,29 @@ body{
 }
 
 main {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
+
+button {
+    padding: .75em 1em;
+    transition-duration: 0.4s;
+    box-shadow: 1px 1px 5px #868268;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    background-color: #b8b284 ;
+    color: #4d4c4b;
+}
+
+button:active {
+    background-color: #c5be8c;
+    box-shadow: 2px 2px 2px #868268;
+}
+
+/* header/footer */
 
 header, footer {
     font-family: 'Merriweather';
