@@ -97,7 +97,7 @@ header a:active, footer a:active {
     padding: .5em;
 }
 
-input {
+.minor input {
     width: 60vw;
     padding: 1em;
     border: none;
@@ -105,12 +105,12 @@ input {
     border-radius: .5em;
 }
 
-input:focus {
+.minor input:focus {
     outline: none;
     box-shadow: inset 0 0 5px goldenrod;
 }
 
-button {
+.minor button {
     color: grey;
     font-family: 'Merriweather';
     background: #8fece8;
@@ -120,10 +120,10 @@ button {
     box-shadow: 2px 2px 5px grey;
 }
 
-button:hover {
+.minor button:hover {
     background: #b3f1ee;
 }
-button:active {
+.minor button:active {
     box-shadow: 2px 2px 2px grey;
 }
 
