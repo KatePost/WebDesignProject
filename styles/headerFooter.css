@@ -31,7 +31,7 @@ a:hover {
 
 nav li {
     display: block;
-    margin: 0;
+    margin: ;
 }
 
 .navbar li, .navbar a {
@@ -137,7 +137,7 @@ footer {
 }
 
 nav {
-    width: 75%;
+    margin: auto;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -154,6 +154,9 @@ nav ul {
 
 @media only screen and (min-width: 600px) {
 
+nav {
+    width: 80%;
+}
 
 .navbar li, .navbar a{
     padding: 1em 1.5em;
