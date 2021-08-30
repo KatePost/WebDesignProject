@@ -5,8 +5,10 @@
     gap: 1rem;
 }
 
-img{
+#workbench-img{
+    margin: auto;
     max-width: 100%;
+
 }
 
 main {
@@ -14,17 +16,23 @@ main {
     margin: auto;
 }
 
+#figure-div{
+    margin: auto 2rem;
+    padding: .5rem;
+}
 
+figure{
+    align-content: center;
+}
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
     main {
-
         width: 70%;
         margin: auto;
     }
 
     p {
-        font-size: 18pt;
+        font-size: 20px;
         padding: .5rem;
     }
 
@@ -40,11 +48,7 @@ main {
         text-align: center;
     }
 
-    img{
-        max-width: 100%;
-    }
-
     figcaption {
-        text-align: left;
+        text-align: center;
     }
 }
