@@ -19,26 +19,14 @@ a:hover {
     text-decoration: underline;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-}
-
 nav li {
-    display: inline-block;
+    display: block;
+    margin: 0;
 }
 
-.navbar li, .navbar a{
-    padding: 1em 1.5em;
+.navbar li, .navbar a {
+    padding: .5em 1em;
 }
-
 
 .navbar a:hover{
     color: black;
@@ -60,17 +48,10 @@ header a:active, footer a:active {
     color: grey;
 }
 
-header.major{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    position: sticky;
-    top: 0;
-    align-items: center;
-}
-
 #logo {
     height: 6.5rem;
-    width: fit-content;
+    max-width: fit-content;
+    width: 20%;
     justify-self: start;
     padding: 0;
     margin: 0;
@@ -89,27 +70,18 @@ header.major{
     font-family: Luminari, 'Brush Script MT', 'Bradley Hand';
     font-size: 1.5em;
     position: absolute;
-    top: 25%;
-    left: 5%;
+    top: 2rem;
+    left: 2rem;
 }
 
 #logo figcaption::first-letter {
     font-size: 3em;
 }
 
-#mainNav {
-    justify-self: center;
-}
-
-#socialsNav {
-    justify-self: end;
-}
-
 .minor {
-    display: grid;
-    justify-items: center;
     background-color: #fff1dc;
     box-shadow: 0 0 20px inset goldenrod, 0 0 5px grey;
+
 }
 
 .textBar {
@@ -117,9 +89,10 @@ header.major{
 }
 
 input {
+    width: 60vw;
     padding: 1em;
     border: none;
-    box-shadow: inset 0 0 5px rgb(224, 224, 224);
+    box-shadow: inset 0 0 5px #e0e0e0;
     border-radius: .5em;
 }
 
@@ -145,18 +118,63 @@ button:active {
     box-shadow: 2px 2px 2px grey;
 }
 
-#copyright {
-    text-align: center;
-    margin: auto;
-}
-
-#links li::marker {
+footer.major li::marker {
     content: none;
 }
 
 footer {
     padding: 1em;
 }
+
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+
+.navbar li, .navbar a{
+    padding: 1em 1.5em;
+}
+
+header.major{
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+.navbar {
+    justify-self: center;
+}
+
+#socialsNav {
+    justify-self: end;
+}
+
+.minor {
+    display: grid;
+    justify-items: center;
+}
+
+#copyright {
+    text-align: center;
+    margin: auto;
+}
+
 footer.minor {
     display: flex;
     justify-content: space-around;
@@ -166,4 +184,6 @@ footer.minor {
 
 #message {
     font-size: 2em;
+}
+
 }
