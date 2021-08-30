@@ -1,7 +1,6 @@
 @charset "UTC-8";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-/* colours added for clarity when designing */
 
 body{
     background-color: #fff;
@@ -10,12 +9,15 @@ body{
 }
 
 main {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
 .container {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, footer {
@@ -149,6 +151,10 @@ nav ul {
     justify-content: space-evenly;
     width: 100%;
     margin: 0;
+}
+
+footer {
+    position: static;
 }
 
 @media only screen and (max-width: 600px) {
