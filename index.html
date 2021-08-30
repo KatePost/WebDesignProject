@@ -21,7 +21,6 @@
         }
 
         .home{
-            background-color: #fff;
             color: #555;
         }
 
@@ -49,6 +48,8 @@
         width: 80%;
         text-align: center;
         font-family: 'Merriweather';
+        min-height: 10vh;
+        margin-bottom: 30px;
         }
 
         /* Create four equal columns that sits next to each other */
@@ -108,14 +109,24 @@
 
         .home-column h4{
             -webkit-line-clamp: 3; /* number of lines to show */
+            min-height: 10vh;
         }
 
+        .home-column a:link{
+        text-decoration: none;
+        color: #008f88;
+        }
+        .home-column a:hover{
+        text-decoration: none;
+        color: #07ada5;
+        text-shadow: 0 0 1px #8fece8;
+}
 
 
     /*------------------------------------subscribe form style---------------------------------*/
 
 
-        form {
+        /*form {
         font-family: Arial;
         }
 
@@ -168,7 +179,7 @@
             
             text-shadow: 0 0 1px #aaa;
             
-        }
+        }*/
                 
     </style>
 </head>
@@ -300,7 +311,7 @@
         
     </div>
 
-    <div class="subscribe">
+    <!--<div class="subscribe">
         <form class ="form-position" method= "post" action="subscribe-completed.html" autocomplete="on">
             <div class="form-container">
               <h4>Something sweet for your inbox! Sign up for FREE recipes</h4>
@@ -314,7 +325,7 @@
               <input id="submit-button" type="submit" value="Subscribe"/>
             </div>
           </form>
-    </div>
+    </div>-->
     </main>
 
 
