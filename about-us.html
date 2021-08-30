@@ -7,17 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+
+        }
+
         header, footer {
             background-color: pink;
         }
 
         main {
-            background-color: antiquewhite;
             width: 70%;
             height: auto;
             margin: auto;
             text-align: center;
+            padding: 1em;
         }
+
+        img {
+            width: 50%;
+            padding: 1em;
+        }
+
+        @media only screen and (max-width: 700px) {
+            body {
+                font-size: 0.8em;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
     </style>
 </head>
 
@@ -26,7 +52,7 @@
         <h1>Header</h1>
     </header>
     <main>
-        <h1>About Us</h1>
+        <h2>About Us</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla velit, earum ipsa odio
             repudiandae unde iste rem consequatur! Esse eius vel soluta neque sint voluptatibus
             explicabo nisi, possimus quis aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
