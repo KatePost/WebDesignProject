@@ -135,6 +135,17 @@ section p {
     color: orange;
 }
 
+a:link{
+    text-decoration: none;
+    color:  #07ada5;
+}
+main a:hover{
+    text-decoration: none;
+    color: #008f88;
+    text-shadow: 0 0 1px #8fece8;
+}
+
+
 @media only screen and (max-width: 1200px) {
     .recipe, #text {
         grid-column: 1/3;
@@ -145,9 +156,6 @@ section p {
         margin-top: 2em;
     }
 
-
-
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -157,6 +165,5 @@ section p {
 
 
 }
-
 
     
