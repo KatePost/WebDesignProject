@@ -1,15 +1,17 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+/* Recipe styles sheet for Taste Of Baking*/
 
+/* Developde by: Kim Alizadeh*/
+
+/* Script Date: August 28, 2021 */
 
 
 main {
     width: 80%;
     height: auto;
     margin: 2em auto auto auto;
-    padding: 2em;
     background-color: white;
     color: #555;
 
@@ -37,7 +39,6 @@ figcaption {
     margin-top: 1em;
 }
 
-
 #recipe-image {
     width: 100%;
     height: 100%;
@@ -45,7 +46,6 @@ figcaption {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
     margin-top: 1em;
 }
-
 
 #time, #ingredients {
     font-size: 0.9em;
@@ -69,10 +69,7 @@ figcaption {
 
 #text, #similar-recipes {
     margin-top: 2em;
-
-
 }
-
 
 #text {
     grid-column: 1/2;
@@ -81,7 +78,6 @@ figcaption {
 #text ol li {
     padding: 1em;
     line-height: 2em;
-
 }
 
 section p {
@@ -92,7 +88,7 @@ section p {
 /* Card styling */
 #next-page {
     text-align: center;
-    margin-top: 2em;
+    margin: 2em auto;
 }
 
 .cards {
@@ -121,11 +117,13 @@ section p {
     text-align: center;
     padding: 1em;
     font-weight: bold;
+    
 }
 
 .difficulty {
     text-align: center;
     font-size: small;
+    min-height: 7vh;
 }
 
 .checked {
@@ -143,7 +141,7 @@ main a:hover{
 }
 
 
-
+/*media queries*/
 
 @media only screen and (max-width: 1200px) {
     .recipe, #text {

@@ -238,7 +238,7 @@ footer {
 #logo figcaption {
     position: relative;
     left: 1em;
-    top: -1em;
+    bottom: 80%;
 }
 
 main {
