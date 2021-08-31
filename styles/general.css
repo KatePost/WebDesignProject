@@ -25,6 +25,7 @@ body{
 main {
     width: 80%;
     margin: auto;
+    padding: 2em 0;
 }
 
 .container {
