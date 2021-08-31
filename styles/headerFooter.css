@@ -88,6 +88,7 @@ header a:active, footer a:active {
     position: absolute;
     top: 2rem;
     left: 2rem;
+    margin: 0;
 }
 
 #logo img {
