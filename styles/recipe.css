@@ -37,6 +37,10 @@ h1 {
     padding:0;
 }
 
+figcaption {
+    margin-top: 1em;
+}
+
 
 #recipe-image {
     width: 100%;
@@ -92,7 +96,6 @@ section p {
     text-align: center;
     margin-top: 2em;
 }
-
 
 .cards {
     margin: 0 auto;
