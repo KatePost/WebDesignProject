@@ -32,7 +32,6 @@
     padding-bottom: 30px;
     text-align: center;
     font-family: 'Merriweather';
-    color: #07ada5;
     margin: 0 auto;
   }
   
@@ -103,3 +102,11 @@
         margin-top: 2em;
         margin: 2em;
     }
+
+    .checked {
+      color: orange;
+  }
+
+  h4{
+    min-height: 5vh;
+  }
