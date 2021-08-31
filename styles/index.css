@@ -4,6 +4,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 .home * {
@@ -11,18 +12,16 @@ box-sizing: border-box;
 }
 
 .home{
-    color: #555;
-}
-
-.home{
     display: grid;
-    margin: 0 auto;
+    height: auto;
+    margin: 2em auto auto auto auto;
+    padding: 2em;
+    color: #555;
     font-family: 'Merriweather';
+    
 }
 
 .heading{
-    margin-top: 40px;
-    margin-bottom: 0;
     text-align: left;
     margin-left: 11%;
 }
@@ -39,7 +38,6 @@ display: flex;
 flex-wrap: wrap;
 width: 80%;
 text-align: center;
-font-family: 'Merriweather';
 min-height: 10vh;
 padding-bottom: 30px;
 margin: 0 auto;
@@ -59,7 +57,6 @@ vertical-align: middle;
 width: 100%;
 border-radius: 3px;
 box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
-
 }
 
 /* Responsive layout - makes a three column-layout instead of four columns */
@@ -86,7 +83,6 @@ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-    background-color: #fff1dc;
 }
 }
 
@@ -97,10 +93,12 @@ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
-    padding: 0 5px;
+    padding: 0 6px;
+    font-size: small;
 }
 
 .home-column h4{
     -webkit-line-clamp: 3; /* number of lines to show */
-    min-height: 10vh;
+    min-height: 7vh;
+    padding: 1px 1px 0;
 }
