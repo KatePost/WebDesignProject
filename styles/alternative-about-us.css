@@ -23,6 +23,7 @@
 main {
     width: 70%;
     margin: auto;
+    padding: 2em;
 }
 
 #figure-div{
@@ -36,10 +37,6 @@ figure{
 }
 
 @media only screen and (min-width: 600px) {
-    main {
-        width: 70%;
-        margin: auto;
-    }
 
     p {
         font-size: 20px;
