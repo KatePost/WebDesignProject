@@ -7,7 +7,7 @@
     <title>Taste of baking | pies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/headerFooter.css">
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" href="images/favicon.ico" type="image/ico"/> 
     <link rel="stylesheet" href="styles/pie-category.css"/>
     
@@ -48,10 +48,10 @@
                         <li><a href="pie-category.html">Pie</a></li>
                     </ul>
                 </nav>
-                <div class="textBar">
+                <form class="textBar" id="searchForm">
                     <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-                    <button type="submit" for="searchBar">Search</button>
-                </div>
+                    <button type="submit" form="searchForm">Search</button>
+                </form>
             </header>
             <main>
                 <div class="main-cake">
@@ -115,14 +115,14 @@
                     <a href="#">Next Page</a>
                 </div>
               </div>
-                  </div>
-                  </main>
+
+            </main>
                     <footer class="minor">
             <span id="message">Stay in touch...</span>
-            <div class="textBar">
-                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
-                <button type="submit" for="subscribe">Sign up</button>
-            </div>
+            <form class="textBar" id="subscribeForm" action="subscribe-completed.html">
+                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" required/>
+                <button type="submit" form="subscribeForm">Sign up</button>
+            </form>
         </footer>
         <footer class="major">
             <ul>

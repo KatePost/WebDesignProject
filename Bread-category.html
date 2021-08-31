@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taste of baling | Bread</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/headerFooter.css">
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" href="images/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="styles/Bread-category.css" />
 </head>
@@ -48,10 +48,10 @@
                     <li><a href="pie-category.html">Pie</a></li>
                 </ul>
             </nav>
-            <div class="textBar">
+            <form class="textBar" id="searchForm">
                 <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-                <button type="submit" for="searchBar">Search</button>
-            </div>
+                <button type="submit" form="searchForm">Search</button>
+            </form>
         </header>
         <main>
             <div class="main-cake">
@@ -100,9 +100,8 @@
 
 
 
-                        <div class="column"><img src="images/bread1.jpg" alt="Baguette" /><a href="recipe.html">
-                                <h4>Baguette</h4>
-                            </a></div>
+                        <div class="column"><img src="images/bread1.jpg" alt="Baguette" />
+                            <a href="recipe.html"><h4>Baguette</h4></a></div>
                         <div class="column"><img src="images/WheatBread.jpg" alt="Wheat Bread" /><a href="recipe.html">
                                 <h4>Wheat Bread</h4>
                             </a></div>
@@ -110,10 +109,8 @@
                                 href="recipe.html">
                                 <h4>Whole Grain Bread</h4>
                             </a></div>
-                        <div class="column"><img src="images/CinnamonRaisinBread.jpg" alt="Cinnamon Raisin Bread" /><a
-                                href="recipe.html">
-                                <h4>Cinnamon Raisin Bread</43>
-                            </a></div>
+                        <div class="column"><img src="images/CinnamonRaisinBread.jpg" alt="Cinnamon Raisin Bread" />
+                            <a href="recipe.html"><h4>Cinnamon Raisin Bread</h4></a></div>
                         <div class="column"><img src="images/AppleCinnamonBread.jpg" alt="Apple Cinnamon Bread" /><a
                                 href="recipe.html">
                                 <h4>Apple Cinnamon Bread</h4>
@@ -138,10 +135,10 @@
         </main>
         <footer class="minor">
             <span id="message">Stay in touch...</span>
-            <div class="textBar">
-                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
-                <button type="submit" for="subscribe">Sign up</button>
-            </div>
+            <form class="textBar" id="subscribeForm" action="subscribe-completed.html">
+                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" required/>
+                <button type="submit" form="subscribeForm">Sign up</button>
+            </form>
         </footer>
         <footer class="major">
             <ul>
