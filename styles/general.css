@@ -174,7 +174,7 @@ header a:active, footer a:active {
 .minor button {
     color: grey;
     font-family: 'Merriweather';
-    background: #8fece8;
+    background: #80d6d2;
     padding: .75em 1em;
     border: none;
     border-radius: 5px;
@@ -182,8 +182,10 @@ header a:active, footer a:active {
 }
 
 .minor button:hover {
-    background: #b3f1ee;
+    background-color: #8fece8;
+    box-shadow: 2px 2px 10px grey;
 }
+
 .minor button:active {
     box-shadow: 2px 2px 2px grey;
 }
