@@ -137,7 +137,7 @@ header a:active, footer a:active {
     font-size: 1.5em;
     position: absolute;
     top: 2rem;
-    left: 2rem;
+    left: 0rem;
     margin: 0;
 }
 
@@ -228,24 +228,32 @@ footer {
 }
     
 #logo figcaption {
-    top: .5em;
-}
-
-main {
-    font-size: 0.8em;
+    top: 0.25em;
+    left: 1.25em;
 }
 }
-
 @media only screen and (min-width: 700px) {
     
 
 #logo {
     height: 6.5rem;
+    border: thin solid grey;
 }
 
+#logo img {
+    position: absolute;
+    left: 4em;
+    height: 5em;
+}
+
+#logo figcaption {
+    top: 3em;
+}
+/*
 #logo figcaption::first-letter {
     font-size: 3em;
 }  
+*/
 
 nav {
     width: 100%;
