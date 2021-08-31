@@ -139,9 +139,8 @@ header a:active, footer a:active {
     color: #eba48d;
     stroke: thin solid black;
     font-family: 'Vegan', Luminari, 'Brush Script MT', 'Bradley Hand';
-    font-size: 1.5em;
+    font-size: 18pt;
     position: absolute;
-    top: 3em;
     left: 0;
     margin: 0;
 }
@@ -229,6 +228,7 @@ footer {
 
 #logo {
     height: 2em;
+    width: 100%;
 }
 
 #logo img {
@@ -236,8 +236,9 @@ footer {
 }
     
 #logo figcaption {
-    top: 0.2em;
-    left: 1.25em;
+    position: relative;
+    left: 1em;
+    bottom: 80%;
 }
 
 main {
@@ -275,6 +276,7 @@ header.major{
     display: grid;
     grid-template-columns: 15% 70% 15%;
     align-items: center;
+    align-content: start;
 }
 
 .navbar {
