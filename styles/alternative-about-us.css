@@ -1,4 +1,4 @@
-.grid-container{
+.about-grid-container{
     margin: auto;
     display: grid;
     grid-template-columns:100%;
@@ -8,7 +8,7 @@
 #workbench-img{
     margin: auto;
     max-width: 100%;
-
+    display: flex;
 }
 
 main {
@@ -17,12 +17,13 @@ main {
 }
 
 #figure-div{
-    margin: auto 2rem;
+    margin: 0;
     padding: .5rem;
 }
 
 figure{
-    align-content: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -36,7 +37,7 @@ figure{
         padding: .5rem;
     }
 
-    .grid-container {
+    .about-grid-container {
         margin: auto;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -51,4 +52,19 @@ figure{
     figcaption {
         text-align: center;
     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px)  {
+
+    #figure-div{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    figure{
+        align-content: center;
+        margin: 0px;
+    }
+    
 }
