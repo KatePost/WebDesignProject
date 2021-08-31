@@ -22,20 +22,21 @@ main {
 }
 
 a:link {
-    color: black;
+    color: #008f88;
     text-decoration: none;
 }
 
 a:visited {
-    color: grey;
+    color: #640164;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #07ada5;
 }
 
 a:active {
-    color: #555;
+    color: purple;
 }
 
 button, input {
