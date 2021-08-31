@@ -41,6 +41,7 @@
     flex: 25%;
     max-width: 25%;
     padding: 0 15px;
+    
   }
   
   .column img {
@@ -110,3 +111,11 @@
   h4{
     min-height: 5vh;
   }
+
+.main-category{
+  display: grid;
+  height: auto;
+  margin: 2em auto auto auto auto;
+  padding: 2em;
+
+}
