@@ -1,6 +1,12 @@
 @charset "UTC-8";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+/* Category styles sheet for Taste Of Baking*/
+
+/* Developde by: Kimberly Alizadeh, Bahareh Jabarzadnouri, Kathryn Post, Alysha Westwood/
+
+/* Script Date: August 28, 2021 */
+
 
 .cake-category * {
     box-sizing: border-box;
