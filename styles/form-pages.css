@@ -25,13 +25,14 @@ body{
     font-family: 'Merriweather', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-fieldset{
-    width: 50%;
+.grid-container{
+    width: 80%;
     margin: auto;
     background-color:#fafcf6;
     border: solid 3px #868268;
     border-radius: 10px;
     padding: 1rem;
+    min-width: 200px;
 }
 
 .form-input, .form-button{
@@ -41,6 +42,8 @@ fieldset{
     font-family: 'Merriweather';
     color: #868268;
     font-size: 12pt;
+    width: 100%;
+
 }
 
 .grid-container > div{
