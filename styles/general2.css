@@ -1,7 +1,7 @@
 @charset "UTC-8";
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @font-face {
-    font-family: 'Vegan Style Personal Use Regular';
+    font-family: 'Vegan';
     font-style: normal;
     font-weight: normal;
     src: local('Vegan Style Personal Use Regular'), url('../fonts/Vegan\ Style\ Personal\ Use.woff') format('woff');
@@ -139,7 +139,7 @@ header a:active, footer a:active {
     color: #eba48d;
     text-shadow: 0 0 0 black;
     stroke: thin solid black;
-    font-family: 'Vegan Style Personal Use Regular', Luminari, 'Brush Script MT', 'Bradley Hand';
+    font-family: 'Vegan', Luminari, 'Brush Script MT', 'Bradley Hand';
     font-size: 1.5em;
     position: absolute;
     top: 3em;
