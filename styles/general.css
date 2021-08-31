@@ -236,7 +236,7 @@ footer {
 }
     
 #logo figcaption {
-    top: .5em;
+    top: 0.2em;
     left: 1.25em;
 }
 
@@ -259,7 +259,7 @@ main {
 }
 
 #logo figcaption {
-    top: 3.5em;
+    bottom: 0;
 }
 
 
