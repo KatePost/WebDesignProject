@@ -1,3 +1,6 @@
+@charset "UTC-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 .about-grid-container{
     margin: auto;
     display: grid;
@@ -14,6 +17,7 @@
 main {
     width: 70%;
     margin: auto;
+    padding: 2em;
 }
 
 #figure-div{
@@ -27,10 +31,6 @@ figure{
 }
 
 @media only screen and (min-width: 600px) {
-    main {
-        width: 70%;
-        margin: auto;
-    }
 
     p {
         font-size: 20px;
