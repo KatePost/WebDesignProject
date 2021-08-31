@@ -16,23 +16,26 @@ main {
 
 .container {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a:link {
-    color: black;
+    color: #008f88;
     text-decoration: none;
 }
 
 a:visited {
-    color: grey;
+    color: #640164;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #07ada5;
 }
 
 a:active {
-    color: #555;
+    text-decoration: underline;
 }
 
 button, input {
@@ -79,10 +82,6 @@ header.major {
     top: 0;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 nav li {
     display: block;
 }
@@ -102,9 +101,17 @@ nav li {
     color: gray;
 }
 
-header a, footer a {
+header a:link, footer a:link {
     color: #555;
     text-decoration: none;
+}
+
+header a:visited, footer a:visited {
+    color: #555;
+}
+
+header a:hover, footer a:hover {
+    color: #07ada5;
 }
 
 header a:active, footer a:active {
@@ -128,6 +135,7 @@ header a:active, footer a:active {
     position: absolute;
     top: 2rem;
     left: 2rem;
+    margin: 0;
 }
 
 #logo img {
@@ -198,6 +206,10 @@ nav ul {
     justify-content: space-evenly;
     width: 100%;
     margin: 0;
+}
+
+footer {
+    position: static;
 }
 
 @media only screen and (max-width: 600px) {
