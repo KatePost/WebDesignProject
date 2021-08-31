@@ -44,16 +44,16 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="cake-category.html">Cakes</a></li>
-                    <li><a href="category.html">Cookies</a></li>
-                    <li><a href="category.html">Bread</a></li>
-                    <li><a href="category.html">Pie</a></li>
-                </ul>
+                    <li><a href="cookies-category.html">Cookies</a></li>
+                    <li><a href="Bread-category.html">Bread</a></li>
+                    <li><a href="pie-category.html">Pie</a></li>
+            </ul>
             </nav>
-            <div class="textBar">
+            <form class="textBar" id="searchForm">
                 <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-                <button type="submit" for="searchBar">Search</button>
-            </div>
-        </header>
+                <button type="submit" form="searchForm">Search</button>
+            </form>
+    </header>
         <main>
             <div class="grid">
                 <div class="recipe">
@@ -86,23 +86,6 @@
                             <li>&frac12 cup reduced strawberry puree</li>
                             <li>optional: 1-2 drops red or pink food coloring</li>
                         </ul>
-                        <aside id="ingredients">
-                            <h3>Ingredients</h3>
-                            <ul>
-                                <li>2 and &frac12 cups (285g) cake flour</li>
-                                <li>2 teaspoons baking powder</li>
-                                <li>&frac12 teaspoon baking soda</li>
-                                <li>1 teaspoon salt</li>
-                                <li>&frac34 cup (1.5 sticks; 170g) unsalted butter, softened to room temperature</li>
-                                <li>1 and &frac34 cups (350g) granulated sugar</li>
-                                <li>5 large egg whites, at room temperature</li>
-                                <li>1/3 cup (75g) sour cream or plain yogurt, at room temperature</li>
-                                <li>2 teaspoons pure vanilla extract</li>
-                                <li>&frac12 cup (120ml) whole milk, at room temperature*</li>
-                                <li>&frac12 cup reduced strawberry puree</li>
-                                <li>optional: 1-2 drops red or pink food coloring</li>
-                            </ul>
-                        </aside>
                     </aside>
                 </aside>
                 <section id="text">
@@ -144,13 +127,8 @@
                             <div>
                                 &#9733; &#9733; &#9733;
                             </div>
-                            <div class="card__info">
-                                <div>
-                                    &#9733; &#9733; &#9733;
-                                </div>
-                                <div>
-                                    <a href="#" class="card__link">View Recipe</a>
-                                </div>
+                            <div>
+                                <a href="#" class="card__link">View Recipe</a>
                             </div>
                         </div>
                     </div>
@@ -163,13 +141,8 @@
                             <div>
                                 &#9733; &#9733; &#9733;
                             </div>
-                            <div class="card__info">
-                                <div>
-                                    &#9733; &#9733; &#9733;
-                                </div>
-                                <div>
-                                    <a href="recipe2.html" class="card__link">View Recipe</a>
-                                </div>
+                            <div>
+                                <a href="recipe2.html" class="card__link">View Recipe</a>
                             </div>
                         </div>
                     </div>
@@ -182,13 +155,8 @@
                             <div>
                                 &#9733; &#9733; &#9733;
                             </div>
-                            <div class="card__info">
-                                <div>
-                                    &#9733; &#9733; &#9733;
-                                </div>
-                                <div>
-                                    <a href="#" class="card__link">View Recipe</a>
-                                </div>
+                            <div>
+                                <a href="#" class="card__link">View Recipe</a>
                             </div>
                         </div>
                     </div>
@@ -201,13 +169,8 @@
                             <div>
                                 &#9733; &#9733; &#9733;
                             </div>
-                            <div class="card__info">
-                                <div>
-                                    &#9733; &#9733; &#9733;
-                                </div>
-                                <div>
-                                    <a href="#" class="card__link">View Recipe</a>
-                                </div>
+                            <div>
+                                <a href="#" class="card__link">View Recipe</a>
                             </div>
                         </div>
                     </div>
@@ -220,31 +183,27 @@
                             <div>
                                 &#9733; &#9733; &#9733;
                             </div>
-                            <div class="card__info">
-                                <div>
-                                    &#9733; &#9733; &#9733;
-                                </div>
-                                <div>
-                                    <a href="#" class="card__link">View Recipe</a>
-                                </div>
+                            <div>
+                                <a href="#" class="card__link">View Recipe</a>
                             </div>
                         </div>
                     </div>
-                </section>
-                <div id="next-page">
-                    <a href="#">Next Page</a>
                 </div>
-            </main>
-            <footer class="minor">
-            <span id="message">Stay in touch...</span>
-            <div class="textBar">
-                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
-                <button type="submit" for="subscribe">Sign up</button>
+            </section>
+            <div id="next-page">
+                <a href="#">Next Page</a>
             </div>
+        </main>
+        <footer class="minor">
+            <span id="message">Stay in touch...</span>
+            <form class="textBar" id="subscribeForm" action="subscribe-completed.html">
+                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" required />
+                <button type="submit" form="subscribeForm">Sign up</button>
+            </form>
         </footer>
         <footer class="major">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Frequently Asked Questions</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
@@ -253,6 +212,5 @@
         </footer>
     </div>
 </body>
-
 
 </html>

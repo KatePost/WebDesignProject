@@ -33,7 +33,7 @@
     text-align: center;
     font-family: 'Merriweather';
     color: #07ada5;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin: 0 auto;
     color: #555;
     
@@ -99,4 +99,10 @@
         border: none;
         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
         border-radius: 5px;
+    }
+
+    #next-page {
+        text-align: center;
+        margin-top: 2em;
+        margin: 2em;
     }

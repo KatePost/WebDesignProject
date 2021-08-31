@@ -19,7 +19,7 @@
                 </a>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="alternative-about-us.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="submit-recipe.html">Submit Recipes</a></li>
                     </ul>
@@ -44,10 +44,10 @@
                         <li><a href="pie-category.html">Pie</a></li>
                     </ul>
                 </nav>
-                <div class="textBar">
+                <form class="textBar" id="searchForm">
                     <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-                    <button type="submit" for="searchBar">Search</button>
-                </div>
+                    <button type="submit" form="searchForm">Search</button>
+                </form>
             </header>
         <main>
             <h1>Some randomly super long content</h1>
@@ -64,10 +64,10 @@
         </main>
         <footer class="minor">
             <span id="message">Stay in touch...</span>
-            <div class="textBar">
-                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
-                <button type="submit" for="subscribe">Sign up</button>
-            </div>
+            <form class="textBar" id="subscribeForm" action="subscribe-completed.html">
+                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" required />
+                <button type="submit" form="subscribeForm">Sign up</button>
+            </form>
         </footer>
         <footer class="major">
             <ul>
