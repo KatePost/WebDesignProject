@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,67 +11,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" href="images/favicon.ico" type="image/ico"/> 
     <link rel="stylesheet" href="styles/index.css"/>
-    <style>
 
-    /*------------------------------------subscribe form style---------------------------------*/
-
-
-        /*form {
-        font-family: Arial;
-        }
-
-        .form-position{
-            margin: auto;
-            width: 60%;
-            border: 5px solid rgb(247, 198, 181);
-            padding: 20px;
-            font-size: 1.7vw;
-        }
-
-        .form-container {
-        padding: 2px;
-        background-color: rgb(247, 198, 181);
-        }
-
-        .form-container h2{
-            margin-bottom: 0;
-        }
-
-
-
-        input[type=text], input[type=submit], input[type=email] {
-        width: 100%;
-        padding: 12px;
-        margin: 4px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        }
-
-
-        input[type=submit] {
-        background-color:  rgb(7, 216, 206);;
-        color: rgb(255, 255, 255);
-        border: none;
-        margin-top: 0;
-        }
-
-        input[type=submit]:hover {
-        opacity: 0.8;
-        }
-
-        a:link{
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            text-decoration: none;
-            
-            text-shadow: 0 0 1px #aaa;
-            
-        }*/
-                
-    </style>
 </head>
 <body>
     <div class="container">
@@ -108,10 +49,10 @@
                         <li><a href="pie-category.html">Pie</a></li>
                     </ul>
                 </nav>
-                <div class="textBar">
+                <form class="textBar" id="searchForm">
                     <input type="search" name="searchBar" id="searchBar" size="50" autofocus />
-                    <button type="submit" for="searchBar">Search</button>
-                </div>
+                    <button type="submit" form="searchForm">Search</button>
+                </form>
             </header>
             <main>
                 <div class ="home">
@@ -200,39 +141,24 @@
                     </div>
                     
                 </div>
-            
-                <!--<div class="subscribe">
-                    <form class ="form-position" method= "post" action="subscribe-completed.html" autocomplete="on">
-                        <div class="form-container">
-                          <h4>Something sweet for your inbox! Sign up for FREE recipes</h4>
-                        </div>
-                      
-                        <div class="form-container" >
-                           <input type="text" id="name1" size="40" minlength="2" maxlength="15" placeholder="Name" required="required"/>
-                           <input type="email" id="email_address" size="40" maxlength="30" placeholder="your_email@example.com" required="required" />
-                        </div>
-                        <div class="form-container">
-                          <input id="submit-button" type="submit" value="Subscribe"/>
-                        </div>
-                      </form>
-                </div>-->
+
                 </main>
-                    <footer class="minor">
-            <span id="message">Stay in touch...</span>
-            <div class="textBar">
-                <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" />
-                <button type="submit" for="subscribe">Sign up</button>
-            </div>
-        </footer>
-        <footer class="major">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="alternative-about-us.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
-            </ul>
-            <div id="copyright"><span>copyright &copy; 2021</span></div>
-        </footer>
+                <footer class="minor">
+                    <span id="message">Stay in touch...</span>
+                    <form class="textBar" id="subscribeForm" action="subscribe-completed.html">
+                        <input type="email" name="subscribe" id="subscribe" size="50" placeholder="address@example.com" required/>
+                        <button type="submit" form="subscribeForm">Sign up</button>
+                    </form>
+                </footer>
+                <footer class="major">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="alternative-about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="submit-recipe.html">Submit a Recipe to be Featured</a></li>
+                    </ul>
+                    <div id="copyright"><span>copyright &copy; 2021</span></div>
+                </footer>
     </div>
 </body>
 
