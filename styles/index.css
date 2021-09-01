@@ -11,7 +11,6 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: white;
 }
 
 .home * {
@@ -25,7 +24,6 @@ box-sizing: border-box;
     padding: 2em;
     color: #555;
     font-family: 'Merriweather';
-    
 }
 
 .heading{
@@ -100,7 +98,7 @@ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.24);
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
-    padding: 0 6px;
+    padding: 0  0  0 6px;
     font-size: small;
 }
 
